@@ -1,13 +1,16 @@
 import './App.css';
 import Blogcard from './Components/Blogcard';
 
-const blog = {title: "My first blog", body: "This is my first blog post!"}
+const blogs = [
+  {title: "Why I'm teaching myself React", body: "This is my first blog post!"},
+  {title: "My first week learning ReactJS", body: "This is my first blog post!"}
+];
 
 function App() {
   return (
-   <div>
-      <Blogcard blog={blog} />
-   </div>
+   <main>
+    { blogs.map((blog) =>  <Blogcard blog={blog} />) }
+   </main>
   );
 }
 
