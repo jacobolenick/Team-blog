@@ -1,12 +1,12 @@
 import './App.css';
-import Blogcards from './Components/Blogcards';
+import Blogcard from './Components/Blogcard';
 
 const blog = {title: "My first blog", body: "This is my first blog post!"}
 
 function App() {
   return (
    <div>
-      <Blogcards blog={blog} />
+      <Blogcard blog={blog} />
    </div>
   );
 }

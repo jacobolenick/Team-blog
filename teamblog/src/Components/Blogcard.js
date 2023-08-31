@@ -1,9 +1,9 @@
 import React from "react";
-import "../styles/Blogcards.css";
+import "../styles/Blogcard.css";
 import Pills from "./Pills";
 import Cardbutton from "./Cardbutton";
 
-const Blogcards = ({ blog }) => {
+const Blogcard = ({ blog }) => {
   return (
     <div className="card">
       <div className="card-body">
@@ -16,4 +16,4 @@ const Blogcards = ({ blog }) => {
   );
 }
 
-export default Blogcards;
+export default Blogcard;
